@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ProductsComponent } from './components/products/products.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [ProductsComponent], 
+  template: `<h1>Angular работает</h1> <app-products></app-products>`,
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'lab4';
+  constructor() {
+    console.log('AppComponent загружен');
+  }
 }
