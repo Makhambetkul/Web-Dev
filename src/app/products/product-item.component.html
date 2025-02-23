@@ -1,0 +1,14 @@
+<div class="product-card">
+  <img [src]="product.images[currentImageIndex]" alt="{{ product.name }}" class="product-image">
+  <button (click)="nextImage()">Следующее изображение</button>
+  <h2>{{ product.name }}</h2>
+  <p>{{ product.description }}</p>
+  <p>Рейтинг: {{ product.rating }} ⭐</p>
+  <a>Лайков: {{ product.likes }}</a>
+  
+  <button (click)="likeProduct()">❤️ Лайк</button><br>
+  <a [href]="product.link" target="_blank">Открыть в магазине</a><br>
+  
+  <button (click)="shareWhatsApp()">Поделиться в WhatsApp</button>
+  <button (click)="shareTelegram()">Поделиться в Telegram</button>
+</div>

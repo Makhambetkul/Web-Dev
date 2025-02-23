@@ -1,12 +1,25 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { CategoryListComponent } from './categories/category-list.component';
+import { ProductListComponent } from './products/product-list.component';
+import { Category } from './shared/category.model';
+import { Product } from './shared/product.model';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, CategoryListComponent, ProductListComponent], 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'lab4.1';
+  selectedCategory: Category | null = null;
+  products: Product[] = [];
+
+  selectCategory(category: Category) {
+    const categoryProducts = this.products.filter(p => p.category === category.name);
+    this.selectedCategory = { ...category, products: categoryProducts };
+  }
+  
 }
