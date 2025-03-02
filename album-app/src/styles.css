@@ -1,0 +1,19 @@
+body{
+    background-color:rgba(255, 175, 159, 0.37) !important;
+    font-family: Georgia, serif;
+    color: rgb(88, 43, 42)
+}
+button{
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;  
+    font-weight: bolder; 
+    -webkit-box-shadow: -1px 3px 11px -4px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: -1px 3px 11px -4px rgba(34, 60, 80, 0.2);
+box-shadow: -1px 3px 11px -4px rgba(34, 60, 80, 0.2);
+}
+a{
+    text-decoration: none;
+    color: rgb(88, 43, 42)
+}

@@ -1,0 +1,36 @@
+h2{
+    font-size: 2em;
+    margin-left: 50px;
+}
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Автоматическая сетка */
+    gap: 10px;
+    padding: 20px;
+
+  }
+  
+  .photo-item {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .photo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .photo-item p {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+  }
+  button{
+    margin-left: 50px;
+  }
+  

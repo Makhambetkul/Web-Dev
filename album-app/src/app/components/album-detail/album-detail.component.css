@@ -1,0 +1,32 @@
+button{
+    margin: 10px;
+}
+input{
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 7px;
+    padding-left: 10px;
+    margin-left: 10px;
+    -webkit-box-shadow: -1px 3px 11px -4px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: -1px 3px 11px -4px rgba(34, 60, 80, 0.2);
+box-shadow: -1px 3px 11px -4px rgba(34, 60, 80, 0.2);
+}
+.save{
+    width: 80px;
+}
+h2{
+    font-size: 2em;
+    margin-left: 50px;
+}
+p{
+    font-size: 20px;
+    margin-left: 50px;
+}
+label{
+    font-size: 20px;
+    margin-left: 50px;
+}
+#view{
+    margin-left: 50px;
+}

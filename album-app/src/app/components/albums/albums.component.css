@@ -1,0 +1,25 @@
+li{
+    background-color: rgba(254, 237, 235, 0.94);
+    margin: 10px;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin-right: 50px;
+}
+ul{
+    list-style-type: none;
+}
+.delete{
+    margin-left: 1200px;
+    margin-bottom: 10px;
+}
+h2{
+    padding-left: 50px;
+    font-size: 2em;
+}
+.home{
+    margin-bottom: 30px;
+    margin-left: 50px;
+    width: 200px;
+    margin-top: 10px;
+}
