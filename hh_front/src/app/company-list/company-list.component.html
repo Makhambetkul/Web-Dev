@@ -1,0 +1,21 @@
+<h2>Companies</h2>
+
+<div *ngIf="companies.length === 0">No companies loaded 😢</div>
+
+<ul>
+    <li *ngFor="let company of companies" (click)="loadVacancies(company.id)">
+        <strong>{{company.name}}</strong><br>
+        {{company.city}} - {{company.address}}
+    </li>
+</ul>
+
+<hr />
+
+<h2 *ngIf="selectedVacancies.length>0">Vacancies</h2>
+<ul>
+    <li *ngFor="let vacancy of selectedVacancies">
+        <strong>{{vacancy.name}}</strong>
+        {{vacancy.description}}<br />
+        {{vacancy.salary}}
+    </li>
+</ul>
